@@ -22,6 +22,7 @@ import {
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input";
 import { toast } from '@/hooks/use-toast';
+import Footer from './footer'
 
 type Role = {
   role: string;
@@ -339,6 +340,7 @@ export default function ToastmastersTimerApp() {
           </div>
         </DialogContent>
       </Dialog>
+      <Footer/>
     </div>
   )
 }
