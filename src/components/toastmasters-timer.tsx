@@ -130,7 +130,7 @@ function RoleTimer({ role, onTimeUpdate }: { role: Role; onTimeUpdate: (name: st
         </CardHeader>
         <CardContent>
           <div className="flex flex-col items-center space-y-4">
-            <div className={`text-4xl font-bold text-white ${colorClass} p-4 rounded-full`}>
+            <div className={`text-4xl font-bold text-white ${colorClass} p-4 rounded-md`}>
               {formatTime(time)}
             </div>
             <div className="text-sm text-gray-500 dark:text-gray-400">
