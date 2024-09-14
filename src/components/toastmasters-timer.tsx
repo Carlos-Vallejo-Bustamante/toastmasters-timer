@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter } from "@/components/ui/dialog"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
-import { Play, Pause, RotateCcw, Sun, Moon, Award, FileText, Check, X } from "lucide-react"
+import { Play, Pause, RotateCcw, Sun, Moon, FileText, Check, X, Hand } from "lucide-react"
 import { useTheme } from "next-themes"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
@@ -94,12 +94,12 @@ function RoleTimer({ role, onTimeUpdate }: { role: Role; onTimeUpdate: (name: st
     if (newColorClass !== colorClass) {
       setColorClass(newColorClass)
       setShowColorModal(true)
-      setTimeout(() => setShowColorModal(false), 2000)
+      setTimeout(() => setShowColorModal(false), 4000)
 
       if (newColorClass === 'bg-red-500') {
         setTimeout(() => {
           setShowAwardModal(true)
-          setTimeout(() => setShowAwardModal(false), 2000)
+          setTimeout(() => setShowAwardModal(false), 4000)
         }, 30000)
       }
     }
@@ -148,19 +148,19 @@ function RoleTimer({ role, onTimeUpdate }: { role: Role; onTimeUpdate: (name: st
         </CardContent>
       </Card>
       <Dialog open={showColorModal} onOpenChange={setShowColorModal}>
-        <DialogContent className="sm:max-w-[425px]">
-          <div className={`w-full h-32 ${colorClass}`}></div>
+        <DialogContent className="sm:max-w-[1400px] h-[48rem]">
+          <div className={`w-full h-full ${colorClass}`}></div>
         </DialogContent>
       </Dialog>
       <Dialog open={showAwardModal} onOpenChange={setShowAwardModal}>
-        <DialogContent className="sm:max-w-[425px]">
-          <div className="flex items-center justify-center h-32">
-            <Award className="h-16 w-16 text-yellow-500" />
+        <DialogContent className="sm:max-w-[1400px] h-[48rem]">
+          <div className="flex items-center justify-center">
+            <Hand className="h-32 w-32 text-yellow-500" />
           </div>
         </DialogContent>
       </Dialog>
       <Dialog open={showResetConfirmation} onOpenChange={setShowResetConfirmation}>
-        <DialogContent className="sm:max-w-[425px] bg-white dark:bg-gray-800 text-gray-800 dark:text-white border-gray-300 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700">
+        <DialogContent className="sm:max-w-[1400px] bg-white dark:bg-gray-800 text-gray-800 dark:text-white border-gray-300 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700">
           <DialogHeader>
             <DialogTitle>Confirm restart</DialogTitle>
             <DialogDescription>
