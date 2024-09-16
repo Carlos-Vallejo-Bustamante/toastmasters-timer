@@ -88,7 +88,7 @@ Enlace del proyecto: [https://github.com/Carlos-Vallejo-Bustamante/toastmasters-
 
 Si encuentras algún problema, por favor abre un [issue](https://github.com/Carlos-Vallejo-Bustamante/toastmasters-timer/issues) y lo revisaremos lo antes posible.
 
-### 💡 ¿Tienes una idea para mejorar la aplicación?
+### 💡 ¿ Tienes una idea para mejorar la aplicación ?
 
 ¡Estamos abiertos a sugerencias! Abre un [issue](https://github.com/Carlos-Vallejo-Bustamante/toastmasters-timer/issues) con la etiqueta "mejora" y discutámoslo.
 
